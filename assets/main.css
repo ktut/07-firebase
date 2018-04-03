@@ -1,0 +1,101 @@
+/* FONTS/BROAD STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: calc(1rem + 5vw);
+    color: white;
+}
+
+div,
+h1,
+h2,
+p,
+p em,
+p b,
+button {
+    font-family: 'Bungee', cursive;
+}
+
+input {
+    font-size: 1.3rem;
+    padding: 2px 5px 4px;
+    margin-right: 5px;
+}
+
+button {
+    color: white;
+    background: black;
+    font-size: 1.3rem;
+    padding-top: 3px;
+}
+
+/* LAYOUT */
+
+body {
+    background-image: url(rock-paper-scissors.png);
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+.rock-contain {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.title,
+.status,
+.game,
+.chat {
+    padding: 25px;
+    margin: 15px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 25px;
+}
+
+
+.status {
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    min-height: 150px;
+}
+
+.game > div {
+    flex-basis: 33.333%;
+    background: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.game > div:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+
+/* chat box */
+
+.chat {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chat .text {
+    overflow-y: scroll;
+    flex-basis: 100%;
+    background: white;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.chat input {
+    flex-grow: 1;
+}
+
