@@ -11,8 +11,10 @@ firebase.initializeApp(config);
 
 let database = firebase.database();
 
-function getPlayers() {
-    
+function resetGame() {
+    $('.js-start-text').show();
+    $('.js-start-button').show();
+    $('.js-status').text("");
 }
 
 // anytime a value in database changes
@@ -79,3 +81,6 @@ $(".js-start-button").on("click", function(event) {
     });
     
 });
+
+// on turn 1, let player 1 choose an option
+// on turn 2, let player 2 choose an option
