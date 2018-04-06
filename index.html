@@ -8,30 +8,34 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/reset.css" />
     <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/main.css" />
-    <script src="./assets/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
     <div class="rock-contain">
 
         <div class="title"><h1>Rock, Paper, Scissors!</h1></div>
-        <div class="status">
+        <div class="status js-status">
             <input type="text" class="js-start-text" placeholder="Enter your name...">
             <button class="js-start-button">Start</button>
         </div>
 
         <div class="game">
-            <div class="player-1">Waiting for Player 1</div>
-            <div class="result"></div>
-            <div class="player-2">Waiting for Player 2</div>
+            <div class="js-player-1">Waiting for Player 1</div>
+            <div class="js-result"></div>
+            <div class="js-player-2">Waiting for Player 2</div>
         </div>
 
         <div class="chat">
-            <div class="text"></div>
-            <input type="text" class="js-chat-text" placeholder="Say (mean) things here">
+            <div class="js-chat-convo text"></div>
+            <input type="text" class="js-chat-text" placeholder="Say (mean) things here...">
             <button class="js-chat-button">Send</button>
         </div>
     </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="./assets/app.js"></script>
     
 </body>
 </html>

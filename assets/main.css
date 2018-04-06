@@ -20,6 +20,10 @@ button {
     font-family: 'Bungee', cursive;
 }
 
+h2 {
+    font-size: 1.8rem;
+}
+
 input {
     font-size: 1.3rem;
     padding: 2px 5px 4px;
@@ -57,20 +61,31 @@ body {
     border-radius: 25px;
 }
 
+.title {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
 .status {
     text-align: center;
+    color: white;
 }
 
 .game {
     display: flex;
-    min-height: 150px;
+    min-height: 200px;
 }
 
 .game > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-basis: 33.333%;
+
     background: white;
     padding: 15px;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -87,11 +102,12 @@ body {
 }
 
 .chat .text {
+    opacity: 0.9;
     overflow-y: scroll;
     flex-basis: 100%;
     background: white;
     padding: 10px;
-    height: 200px;
+    height: 125px;
     margin-bottom: 10px;
 }
 
